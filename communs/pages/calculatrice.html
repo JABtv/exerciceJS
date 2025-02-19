@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP ADRAR - Tom ANDRÈS</title>
+    <!-- Link Perso. -->
+    <link rel="stylesheet" href="../../src/style/style.css" />
+    <link rel="stylesheet" href="../../src/style/calculatrice.css" />
+    <!-- Google Font. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="title">
+          <a href="#" class="logo"><h1>Tom ANDRÈS</h1></a>
+          <a href="../../index.html">accueil</a>
+        </div>
+        <div class="navLink show">
+          <ul class="navListe">
+            <li class="navItems">
+              <button id="btnRetour">
+                <img
+                  src="../../assets/imgs/icons/arrowBack.png"
+                  alt="Bouton retour"
+                />
+              </button>
+            </li>
+            <li class="navItems">
+              <a href="#" class="nav active">Calculatrice</a>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="hamburger"
+          src="../../assets/imgs/icons/menu.png"
+          alt="Menu de navigation du site."
+        />
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <h2>Calculatrice</h2>
+        <div class="calculatrice">
+          <label for="display">Display</label>
+          <input type="text" id="display" placeholder="0" value="" readonly />
+
+          <div class="buttons">
+            <button onclick="c()" value="7">7</button>
+            <button onclick="c()" value="8">8</button>
+            <button onclick="c()" value="9">9</button>
+            <button class="bgOrange" onclick="c()">/</button>
+          </div>
+
+          <div class="buttons">
+            <button class="btn" onclick="c()" value="4">4</button>
+            <button class="btn" onclick="c()" value="5">5</button>
+            <button class="btn" onclick="c()" value="6">6</button>
+            <button class="bgOrange" onclick="c()" value="*">X</button>
+          </div>
+
+          <div class="buttons">
+            <button class="btn" onclick="c()" value="1">1</button>
+            <button class="btn" onclick="c()" value="2">2</button>
+            <button class="btn" onclick="c()" value="3">3</button>
+            <button class="bgOrange" onclick="c()">-</button>
+          </div>
+
+          <div class="buttons">
+            <button class="btn" onclick="c()" value=""><-</button>
+            <button class="btn" onclick="c()" value="0">0</button>
+            <button class="btn" onclick="c()" value="," disabled>,</button>
+            <button class="bgOrange" onclick="c()">+</button>
+          </div>
+
+          <div class="buttons">
+            <button class="btnResult bgOrange" onclick="c()" value="=">
+              =
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <input type="text" id="ecran" readonly />
+      <br />
+      <button value="1">1</button>
+      <button value="2">2</button>
+      <button value="3">3</button>
+      <button value="+">+</button>
+      <br />
+      <button value="4">4</button>
+      <button value="5">5</button>
+      <button value="6">6</button>
+      <button value="-">-</button>
+      <br />
+      <button value="7">7</button>
+      <button value="8">8</button>
+      <button value="9">9</button>
+      <button value="*">*</button>
+      <br />
+      <button value="C">C</button>
+      <button value="0">0</button>
+      <button value="=">=</button>
+      <button value="/">/</button>
+    </footer>
+    <script src="../../src/script/js/navbar.js"></script>
+  </body>
+</html>

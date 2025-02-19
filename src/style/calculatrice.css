@@ -1,0 +1,67 @@
+main section.container {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  border: #f0f0f0 solid;
+  border-radius: 5px;
+  padding: 1em;
+  color: white;
+  background-color: black;
+}
+main section.container h2 {
+  text-align: center;
+  margin: 1em;
+}
+
+main section.container div.calculatrice {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+main section.container div.calculatrice input#display {
+  text-align: end;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  height: 25px;
+  width: 170px;
+  border: 1px #f0f0f0 solid;
+  padding: 5px;
+}
+
+main section.container div.calculatrice div.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  gap: 0.5em;
+}
+
+main section.container div.calculatrice div.buttons button {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: none;
+  background-color: #292929;
+  color: white;
+}
+main section.container div.calculatrice div.buttons button.bgOrange {
+  background-color: #f48c36;
+}
+main section.container div.calculatrice div.buttons button.bgOrange:hover {
+  background-color: #ff9c5b;
+}
+main section.container div.calculatrice div.buttons button:hover {
+  background-color: #393939;
+  cursor: pointer;
+}
+
+main section.container div.calculatrice div.buttons button:active {
+  background-color: #505050;
+}
+
+main section.container div.calculatrice div.buttons button.btnResult {
+  height: 25px;
+  width: 180px;
+  border-radius: 5px;
+}
