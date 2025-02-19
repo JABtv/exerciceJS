@@ -22,12 +22,12 @@ main section.container div.calculatrice {
 main section.container div.calculatrice input#display {
   text-align: end;
   background-color: transparent;
-  border: none;
   font-size: 1.5em;
   height: 25px;
-  width: 170px;
+  width: 173px;
   border: 1px #f0f0f0 solid;
   padding: 5px;
+  cursor: default;
 }
 
 main section.container div.calculatrice div.buttons {
@@ -62,6 +62,6 @@ main section.container div.calculatrice div.buttons button:active {
 
 main section.container div.calculatrice div.buttons button.btnResult {
   height: 25px;
-  width: 180px;
+  width: 185px;
   border-radius: 5px;
 }
